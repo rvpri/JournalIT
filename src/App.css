@@ -1,0 +1,149 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.myclass {
+  display: flex;
+  flex-direction: row;
+}
+
+.parent-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.child-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-container {
+  width: 100vh;
+}
+
+.heading {
+  width: 100%;
+  background-color: pink;
+  justify-content: flex-start;
+  border: 5px solid pink;
+}
+
+.heading h2 {
+  color: white;
+  text-align: center;
+}
+
+.form-container {
+  width: 70%;
+  background: White;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  border: 0.5px solid rgb(211, 209, 209);
+}
+
+.form-container input {
+  width: 80%;
+  padding: 10px;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  border: none;
+  height: 30px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.form-container textarea {
+  width: 80%;
+  height: 300px;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.form-container input[type="submit"]{
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  height: 45px;
+  width: 30%;
+  border-radius: 4px;
+  margin-top: 7px;
+  cursor: pointer;
+  outline: none;
+  background: rgb(251, 205, 213);
+  color: white;
+  text-transform: capitalize;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.display-container {
+  width: 20%;
+  background: rgb(241, 241, 241);
+  text-align: center;
+  border-right: 0.5px rgb(245, 245, 245);
+}
+
+.DisplayHeading {
+  width: 90%;
+  height: 70px;
+  text-align: center;
+}
+
+.displayItems {
+  text-align: left;
+  width: 90%;
+  margin-left: auto;
+}
+
+.display-details {
+  display: flex;
+  gap: 10px;
+}
+
+.display-title {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: larger;
+}
+
+@media only screen and (max-width: 600px) {
+  .myclass {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .parent-container {
+    order: 1;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .myclass .form-container textarea {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .display-container {
+    order: 2;
+    width: 90%;
+    align-self: center;
+  }
+}
